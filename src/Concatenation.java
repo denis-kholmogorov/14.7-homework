@@ -1,4 +1,4 @@
-
+/*
 public class Concatenation
 {
     public static void main(String[] args)
@@ -13,4 +13,4 @@ public class Concatenation
 
         System.out.println((System.currentTimeMillis() - start) + " ms");
     }
-}
+}*/
