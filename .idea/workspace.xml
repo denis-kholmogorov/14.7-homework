@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc9b9c81-4490-4706-bd79-31420047e9e7" name="Default" comment="Two Threads">
-      <change afterPath="$PROJECT_DIR$/res/numbers0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/numbers1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/numbers2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/numbers3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/numbersThread-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/numbersThread-3.txt" afterDir="false" />
+    <list default="true" id="dc9b9c81-4490-4706-bd79-31420047e9e7" name="Default" comment="Two example Threads">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CarNumberGenerator/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarNumberGenerator/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/numbers0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/numbers1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/numbers2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/numbers3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/numbersThread-0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/numbersThread-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/numbersThread-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/numbersThread-3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Writer.java" afterDir="false" />
     </list>
@@ -188,13 +190,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579461950440</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Two example Threads">
+      <created>1579464969488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579464969488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Two Threads" />
-    <option name="LAST_COMMIT_MESSAGE" value="Two Threads" />
+    <MESSAGE value="Two example Threads" />
+    <option name="LAST_COMMIT_MESSAGE" value="Two example Threads" />
   </component>
   <component name="WindowStateProjectService">
     <state x="491" y="79" width="376" height="570" key="#com.intellij.ide.util.MemberChooser" timestamp="1579437351314">
@@ -205,26 +215,26 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="523" y="258" width="300" height="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.732@0.0.1366.732" timestamp="1579375143068" />
-    <state x="298" y="0" width="761" height="727" key="CommitChangelistDialog2" timestamp="1579461947735">
+    <state x="298" y="0" width="761" height="727" key="CommitChangelistDialog2" timestamp="1579464966478">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="298" y="0" width="761" height="727" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1579461947735" />
-    <state width="1320" height="161" key="GridCell.Tab.0.bottom" timestamp="1579464783985">
+    <state x="298" y="0" width="761" height="727" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1579464966478" />
+    <state width="1320" height="161" key="GridCell.Tab.0.bottom" timestamp="1579466507792">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="161" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1579464783985" />
-    <state width="1320" height="161" key="GridCell.Tab.0.center" timestamp="1579464783984">
+    <state width="1320" height="161" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
+    <state width="1320" height="161" key="GridCell.Tab.0.center" timestamp="1579466507792">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="161" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1579464783984" />
-    <state width="1320" height="161" key="GridCell.Tab.0.left" timestamp="1579464783984">
+    <state width="1320" height="161" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
+    <state width="1320" height="161" key="GridCell.Tab.0.left" timestamp="1579466507792">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="161" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1579464783984" />
-    <state width="1320" height="161" key="GridCell.Tab.0.right" timestamp="1579464783985">
+    <state width="1320" height="161" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
+    <state width="1320" height="161" key="GridCell.Tab.0.right" timestamp="1579466507792">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state width="1320" height="161" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1579464783985" />
+    <state width="1320" height="161" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
     <state x="412" y="80" width="533" height="568" key="RollbackChangesDialog" timestamp="1579376961168">
       <screen x="0" y="0" width="1366" height="732" />
     </state>

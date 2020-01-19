@@ -7,13 +7,12 @@ public class Loader
 {
     public static void main(String[] args) throws Exception
     {
-
-        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(4);
         int proc =Runtime.getRuntime().availableProcessors();
         int regionCode = 199;
         char letters[] = {'А','У', 'К', 'Е', 'Н', 'Х', 'В', 'Р', 'О', 'С', 'М', 'Т'};
         StringBuilder builder = new StringBuilder();
         long start = System.currentTimeMillis();
+
         for(int number = 1; number < 1000; number++)
         {
             for (char firstLetter : letters)
@@ -33,27 +32,8 @@ public class Loader
                 }
             }
         }
-        System.out.println((System.currentTimeMillis() - start) + " ms builder end \n" );
-        long execut = System.currentTimeMillis();
-        executor.execute(()->{
-            try {
-                for(int i = 0; i < proc; i++){
-                    PrintWriter writer = new PrintWriter("res/numbers" + i + ".txt");
-                    writer.write(builder.toString());
-                    writer.flush();
-                    writer.close();
-                    System.out.println((System.currentTimeMillis() - execut) + " ms executor end " + i);
-                }
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-            executor.shutdown();
-        });
-        Thread.sleep(2000);
-        long forTime = System.currentTimeMillis();
         for(int i = 0; i < proc; i++){
-            Writer writer = new Writer(builder, forTime);
-            writer.start();
+            new Writer(builder, start).start();
         }
     }
 
@@ -69,13 +49,25 @@ public class Loader
         }
     }
 }
+
+
+/*      Лучший результат.
+        656 ms Thread-1
+        661 ms Thread-3
+        689 ms Thread-2
+        697 ms Thread-0
+        */
+
 /*Writer writer1 = new Writer(builder, start);
         Writer writer2 = new Writer(builder, start);
         writer1.start();
         writer2.start();
         */
 
-/* executor.execute(()->{
+/*
+            Время работы дольше чем обыный способ
+            ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(proc);
+            executor.execute(()->{
             try {
                 PrintWriter writer = new PrintWriter("res/numbers1.txt");
                 PrintWriter writer1 = new PrintWriter("res/numbers2.txt");

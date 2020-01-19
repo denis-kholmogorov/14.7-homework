@@ -5,7 +5,6 @@ public class Writer extends Thread {
 
     StringBuilder builder;
     PrintWriter writer;
-
     long start;
 
     public Writer(StringBuilder builder, long start){
