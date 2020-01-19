@@ -4,6 +4,7 @@ import java.io.PrintWriter;
 public class Writer extends Thread {
 
     StringBuilder builder;
+    PrintWriter writer;
 
     long start;
 
@@ -15,7 +16,7 @@ public class Writer extends Thread {
     @Override
     public void run() {
         try {
-            PrintWriter writer = new PrintWriter("res/numbers" + Thread.currentThread().getName() +".txt");
+            writer = new PrintWriter("res/numbers" + Thread.currentThread().getName() +".txt");
             writer.write(builder.toString());
             writer.flush();
             writer.close();
