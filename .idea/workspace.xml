@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc9b9c81-4490-4706-bd79-31420047e9e7" name="Default" comment="Two example Threads">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/numbers0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/numbers1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CarNumberGenerator/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarNumberGenerator/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/numbers0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/numbers1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/numbers2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/numbers3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/numbersThread-0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/numbersThread-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/numbersThread-2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/numbersThread-3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Writer.java" afterDir="false" />
     </list>
@@ -19,6 +15,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,6 +35,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1Wa60XC34FGSvLaWAqKd4tbvZvo" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,9 +49,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571378817833" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Pattern/pattern-Duck" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -123,9 +127,10 @@
       </method>
     </configuration>
     <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="13.0.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Loader" />
       <module name="CarNumberGenerator" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,6 +177,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -207,42 +224,56 @@
     <option name="LAST_COMMIT_MESSAGE" value="Two example Threads" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="295" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579506356546">
+      <screen x="0" y="0" width="1680" height="1012" />
+    </state>
+    <state x="295" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1012@0.0.1680.1012" timestamp="1579506356546" />
     <state x="491" y="79" width="376" height="570" key="#com.intellij.ide.util.MemberChooser" timestamp="1579437351314">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="491" y="79" width="376" height="570" key="#com.intellij.ide.util.MemberChooser/0.0.1366.732@0.0.1366.732" timestamp="1579437351314" />
-    <state x="523" y="258" width="300" height="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579375143068">
-      <screen x="0" y="0" width="1366" height="732" />
+    <state x="643" y="357" width="300" height="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579506373185">
+      <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state x="523" y="258" width="300" height="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.732@0.0.1366.732" timestamp="1579375143068" />
+    <state x="643" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1012@0.0.1680.1012" timestamp="1579506373185" />
     <state x="298" y="0" width="761" height="727" key="CommitChangelistDialog2" timestamp="1579464966478">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="298" y="0" width="761" height="727" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1579464966478" />
-    <state width="1320" height="161" key="GridCell.Tab.0.bottom" timestamp="1579466507792">
-      <screen x="0" y="0" width="1366" height="732" />
+    <state x="620" y="285" width="428" height="474" key="FileChooserDialogImpl" timestamp="1579519568249">
+      <screen x="0" y="0" width="1680" height="1012" />
+    </state>
+    <state x="620" y="285" width="428" height="474" key="FileChooserDialogImpl/0.0.1680.1012@0.0.1680.1012" timestamp="1579519568249" />
+    <state width="1624" height="265" key="GridCell.Tab.0.bottom" timestamp="1579519417984">
+      <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1320" height="161" key="GridCell.Tab.0.center" timestamp="1579466507792">
-      <screen x="0" y="0" width="1366" height="732" />
+    <state width="1624" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1012@0.0.1680.1012" timestamp="1579519417984" />
+    <state width="1624" height="265" key="GridCell.Tab.0.center" timestamp="1579519417984">
+      <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1320" height="161" key="GridCell.Tab.0.left" timestamp="1579466507792">
-      <screen x="0" y="0" width="1366" height="732" />
+    <state width="1624" height="265" key="GridCell.Tab.0.center/0.0.1680.1012@0.0.1680.1012" timestamp="1579519417984" />
+    <state width="1624" height="265" key="GridCell.Tab.0.left" timestamp="1579519417983">
+      <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1320" height="161" key="GridCell.Tab.0.right" timestamp="1579466507792">
-      <screen x="0" y="0" width="1366" height="732" />
+    <state width="1624" height="265" key="GridCell.Tab.0.left/0.0.1680.1012@0.0.1680.1012" timestamp="1579519417983" />
+    <state width="1624" height="265" key="GridCell.Tab.0.right" timestamp="1579519417984">
+      <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
+    <state width="1624" height="265" key="GridCell.Tab.0.right/0.0.1680.1012@0.0.1680.1012" timestamp="1579519417984" />
     <state x="412" y="80" width="533" height="568" key="RollbackChangesDialog" timestamp="1579376961168">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="412" y="80" width="533" height="568" key="RollbackChangesDialog/0.0.1366.732@0.0.1366.732" timestamp="1579376961168" />
-    <state x="376" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1579460323998">
-      <screen x="0" y="0" width="1366" height="732" />
+    <state x="462" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1579513831083">
+      <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state x="376" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1579460323998" />
+    <state x="462" y="268" key="com.intellij.ide.util.TipDialog/0.0.1680.1012@0.0.1680.1012" timestamp="1579513831083" />
     <state x="453" y="234" key="git4idea.rebase.GitRebaseDialog" timestamp="1579433673260">
       <screen x="0" y="0" width="1366" height="732" />
     </state>

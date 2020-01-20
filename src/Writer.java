@@ -1,27 +1,23 @@
-import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public class Writer extends Thread {
 
-    StringBuilder builder;
-    PrintWriter writer;
-    long start;
+    private final StringBuilder builder;
+    private final PrintWriter writer;
+    private long start;
 
-    public Writer(StringBuilder builder, long start){
+    public Writer(StringBuilder builder, PrintWriter writer, long start) {
         this.builder = builder;
         this.start = start;
+        this.writer = writer;
+
     }
 
     @Override
     public void run() {
-        try {
-            writer = new PrintWriter("res/numbers" + Thread.currentThread().getName() +".txt");
-            writer.write(builder.toString());
-            writer.flush();
-            writer.close();
-            System.out.println((System.currentTimeMillis() - start) + " ms " + Thread.currentThread().getName());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        writer.write(builder.toString());
+        writer.flush();
+        writer.close(); // закрываю writer в конце после записи всех данныхж
+        System.out.println((System.currentTimeMillis() - start) + " ms " + Thread.currentThread().getName());
     }
 }

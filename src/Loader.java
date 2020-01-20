@@ -1,5 +1,7 @@
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -7,79 +9,82 @@ public class Loader
 {
     public static void main(String[] args) throws Exception
     {
-        int proc =Runtime.getRuntime().availableProcessors();
-        int regionCode = 199;
-        char letters[] = {'А','У', 'К', 'Е', 'Н', 'Х', 'В', 'Р', 'О', 'С', 'М', 'Т'};
-        StringBuilder builder = new StringBuilder();
         long start = System.currentTimeMillis();
+        int proc = Runtime.getRuntime().availableProcessors();
+        int maxRegionCode = 10;
+        StringBuilder builder;
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(proc); // Создаем пул потоков в зависимости от количества процессоров на PC
+        PrintWriter[] writers = new PrintWriter[proc]; // создаем массив объектов PrintWriter
 
-        for(int number = 1; number < 1000; number++)
+        for(int i = 0; i < proc; i++)
         {
-            for (char firstLetter : letters)
-            {
-                for (char secondLetter : letters)
-                {
-                    for (char thirdLetter : letters)
-                    {
-                        builder.append(firstLetter);
-                        builder.append(padNumber(number));
-                        builder.append(secondLetter);
-                        builder.append(thirdLetter);
-                        builder.append(regionCode);
-                        builder.append("\n");
+            writers[i] = new PrintWriter("res/numbers" + i + ".txt"); //добавляем в массив объекты
+        }
 
+        char letters[] = {'А','У', 'К', 'Е', 'Н', 'Х', 'В', 'Р', 'О', 'С', 'М', 'Т'};
+
+        for(int regionCode = 1; regionCode <= maxRegionCode; regionCode++ )
+        {
+            builder = new StringBuilder(); //содание билдера
+            for (int number = 1; number < 1000; number++)
+            {
+                for (char firstLetter : letters)
+                {
+                    for (char secondLetter : letters)
+                    {
+                        for (char thirdLetter : letters)
+                        {
+                            builder.append(firstLetter);
+                            builder.append(padNumber(number));
+                            builder.append(secondLetter);
+                            builder.append(thirdLetter);
+                            builder.append(padRegionCode(regionCode));
+                            builder.append("\n");
+                        }
                     }
                 }
             }
+
+            for(int i = 0; i < writers.length; i++)
+            {
+                executor.execute(new Writer(builder, writers[i], start));
+                /* Использование потоков для задачи записи в файлы.
+                * Использование количества потоков большего чем ядер у процессора не приводит к ускорению.
+                * Т.к учащается переключения ядра между потоками
+                * Программа работает быстрее если файлов не существует и они создаются занова*/
+            }
         }
-        for(int i = 0; i < proc; i++){
-            new Writer(builder, start).start();
-        }
+        executor.shutdown();
     }
 
-    private static String padNumber(int number) {
+    private static String padNumber(int number) { // в методе заменил цикл на условие
         String numberStr = Integer.toString(number);
-        int padSize = numberStr.length();
-        if (padSize == 1) {
+        int a = number/10;
+
+        if (a == 0)
+        {
             return "00" + numberStr;
-        } else if (padSize == 2) {
+        }
+        else if (a < 10 && a > 0)
+        {
             return "0" + numberStr;
-        } else {
+        }
+        else
+        {
+            return numberStr;
+        }
+    }
+    private static String padRegionCode(int code) { // в методе заменил цикл на условие
+        String numberStr = Integer.toString(code);
+        int a = code/10;
+
+        if (a == 0)
+        {
+            return "0" + numberStr;
+        }
+        else
+        {
             return numberStr;
         }
     }
 }
-
-
-/*      Лучший результат.
-        656 ms Thread-1
-        661 ms Thread-3
-        689 ms Thread-2
-        697 ms Thread-0
-        */
-
-/*Writer writer1 = new Writer(builder, start);
-        Writer writer2 = new Writer(builder, start);
-        writer1.start();
-        writer2.start();
-        */
-
-/*
-            Время работы дольше чем обыный способ
-            ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(proc);
-            executor.execute(()->{
-            try {
-                PrintWriter writer = new PrintWriter("res/numbers1.txt");
-                PrintWriter writer1 = new PrintWriter("res/numbers2.txt");
-                writer.write(builder.toString());
-                writer1.write(builder.toString());
-                writer1.flush();
-                writer1.close();
-                writer.flush();
-                writer.close();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-            executor.shutdown();
-            System.out.println((System.currentTimeMillis() - start1) + " ms starr1" );
-        });*/
