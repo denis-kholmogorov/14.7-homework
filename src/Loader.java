@@ -1,7 +1,5 @@
-import java.io.FileNotFoundException;
+
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -12,6 +10,7 @@ public class Loader
         long start = System.currentTimeMillis();
         int proc = Runtime.getRuntime().availableProcessors();
         int maxRegionCode = 10;
+        boolean end = false;
         StringBuilder builder;
         ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(proc); // Создаем пул потоков в зависимости от количества процессоров на PC
         PrintWriter[] writers = new PrintWriter[proc]; // создаем массив объектов PrintWriter
@@ -26,6 +25,8 @@ public class Loader
         for(int regionCode = 1; regionCode <= maxRegionCode; regionCode++ )
         {
             builder = new StringBuilder(); //содание билдера
+          if(regionCode == maxRegionCode) end = true;
+
             for (int number = 1; number < 1000; number++)
             {
                 for (char firstLetter : letters)
@@ -45,13 +46,20 @@ public class Loader
                 }
             }
 
-            for(int i = 0; i < writers.length; i++)
-            {
-                executor.execute(new Writer(builder, writers[i], start));
+            for (int i = 0; i < writers.length; i++) {
+                executor.execute(new Writer(builder, writers[i], start, end));
                 /* Использование потоков для задачи записи в файлы.
-                * Использование количества потоков большего чем ядер у процессора не приводит к ускорению.
-                * Т.к учащается переключения ядра между потоками
-                * Программа работает быстрее если файлов не существует и они создаются занова*/
+                 * Использование количества потоков большего чем ядер у процессора не приводит к ускорению.
+                 * Т.к учащается переключения ядра между потоками
+                 * Программа работает быстрее если файлов не существует и они создаются заново
+                 *
+                 * Так же попробывал накапливать builder и вызывать его только про прохождении 2, 3, 4 циклов regionCode
+                 * но в скорости не выйграл и очень много памяти начинает кушать
+                 * на двух ядерном pc получаются при 10 регионах
+                 * 7608 ms pool-1-thread-1
+                 * 7620 ms pool-1-thread-2
+                 * Быстрее не получается
+                 * */
             }
         }
         executor.shutdown();

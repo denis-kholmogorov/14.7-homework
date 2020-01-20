@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc9b9c81-4490-4706-bd79-31420047e9e7" name="Default" comment="Two example Threads">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/res/numbers0.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/res/numbers1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CarNumberGenerator/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarNumberGenerator/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarNumberGenerator/Writer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarNumberGenerator/Writer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Writer.java" afterDir="false" />
     </list>
@@ -245,35 +244,35 @@
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state x="620" y="285" width="428" height="474" key="FileChooserDialogImpl/0.0.1680.1012@0.0.1680.1012" timestamp="1579519568249" />
-    <state width="1624" height="265" key="GridCell.Tab.0.bottom" timestamp="1579519417984">
+    <state width="1624" height="265" key="GridCell.Tab.0.bottom" timestamp="1579525081165">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1624" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1012@0.0.1680.1012" timestamp="1579519417984" />
-    <state width="1624" height="265" key="GridCell.Tab.0.center" timestamp="1579519417984">
+    <state width="1624" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1012@0.0.1680.1012" timestamp="1579525081165" />
+    <state width="1624" height="265" key="GridCell.Tab.0.center" timestamp="1579525081164">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1624" height="265" key="GridCell.Tab.0.center/0.0.1680.1012@0.0.1680.1012" timestamp="1579519417984" />
-    <state width="1624" height="265" key="GridCell.Tab.0.left" timestamp="1579519417983">
+    <state width="1624" height="265" key="GridCell.Tab.0.center/0.0.1680.1012@0.0.1680.1012" timestamp="1579525081164" />
+    <state width="1624" height="265" key="GridCell.Tab.0.left" timestamp="1579525081164">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1624" height="265" key="GridCell.Tab.0.left/0.0.1680.1012@0.0.1680.1012" timestamp="1579519417983" />
-    <state width="1624" height="265" key="GridCell.Tab.0.right" timestamp="1579519417984">
+    <state width="1624" height="265" key="GridCell.Tab.0.left/0.0.1680.1012@0.0.1680.1012" timestamp="1579525081164" />
+    <state width="1624" height="265" key="GridCell.Tab.0.right" timestamp="1579525081165">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1624" height="265" key="GridCell.Tab.0.right/0.0.1680.1012@0.0.1680.1012" timestamp="1579519417984" />
+    <state width="1624" height="265" key="GridCell.Tab.0.right/0.0.1680.1012@0.0.1680.1012" timestamp="1579525081165" />
     <state x="412" y="80" width="533" height="568" key="RollbackChangesDialog" timestamp="1579376961168">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="412" y="80" width="533" height="568" key="RollbackChangesDialog/0.0.1366.732@0.0.1366.732" timestamp="1579376961168" />
-    <state x="462" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1579513831083">
+    <state x="462" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1579523669780">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state x="376" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1579460323998" />
-    <state x="462" y="268" key="com.intellij.ide.util.TipDialog/0.0.1680.1012@0.0.1680.1012" timestamp="1579513831083" />
+    <state x="462" y="268" key="com.intellij.ide.util.TipDialog/0.0.1680.1012@0.0.1680.1012" timestamp="1579523669780" />
     <state x="453" y="234" key="git4idea.rebase.GitRebaseDialog" timestamp="1579433673260">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
