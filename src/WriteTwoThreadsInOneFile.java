@@ -17,7 +17,7 @@ public class WriteTwoThreadsInOneFile
     public static void main(String[] args) throws FileNotFoundException {
         long start = System.currentTimeMillis();
         int proc = Runtime.getRuntime().availableProcessors();
-        int maxRegionCode = 10;
+        int maxRegionCode = 100;
         boolean end = false;
         StringBuilder builder = new StringBuilder();
         PrintWriter writer = new PrintWriter("res/numbersTwoThreads.txt"); //добавляем в массив объекты
