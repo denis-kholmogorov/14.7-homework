@@ -1,4 +1,10 @@
 
+/**
+Время выполнения итерации 100 регионов в два файла.
+ 46403 ms pool-1-thread-2
+ 46455 ms pool-1-thread-1
+*/
+
 import java.io.PrintWriter;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -9,16 +15,14 @@ public class Loader
     {
         long start = System.currentTimeMillis();
         int proc = Runtime.getRuntime().availableProcessors();
-        int maxRegionCode = 10;
+        int maxRegionCode = 100;
         boolean end = false;
         StringBuilder builder;
         ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(proc); // Создаем пул потоков в зависимости от количества процессоров на PC
-        PrintWriter[] writers = new PrintWriter[proc]; // создаем массив объектов PrintWriter
 
-        for(int i = 0; i < proc; i++)
-        {
-            writers[i] = new PrintWriter("res/numbers" + i + ".txt"); //добавляем в массив объекты
-        }
+        PrintWriter writers1 = new PrintWriter("res/numbersOne1.txt"); //добавляем в массив объекты
+        PrintWriter writers2 = new PrintWriter("res/numbersOne2.txt"); //добавляем в массив объекты
+
 
         char letters[] = {'А','У', 'К', 'Е', 'Н', 'Х', 'В', 'Р', 'О', 'С', 'М', 'Т'};
 
@@ -46,21 +50,22 @@ public class Loader
                 }
             }
 
-            for (int i = 0; i < writers.length; i++) {
-                executor.execute(new Writer(builder, writers[i], start, end));
-                /* Использование потоков для задачи записи в файлы.
-                 * Использование количества потоков большего чем ядер у процессора не приводит к ускорению.
-                 * Т.к учащается переключения ядра между потоками
-                 * Программа работает быстрее если файлов не существует и они создаются заново
-                 *
-                 * Так же попробывал накапливать builder и вызывать его только про прохождении 2, 3, 4 циклов regionCode
-                 * но в скорости не выйграл и очень много памяти начинает кушать
-                 * на двух ядерном pc получаются при 10 регионах
-                 * 7608 ms pool-1-thread-1
-                 * 7620 ms pool-1-thread-2
-                 * Быстрее не получается
-                 * */
-            }
+
+            executor.execute(new Writer(builder, writers1, start, end));
+            executor.execute(new Writer(builder, writers2, start, end));
+            /* Использование потоков для задачи записи в файлы.
+             * Использование количества потоков большего чем ядер у процессора не приводит к ускорению.
+             * Т.к учащается переключения ядра между потоками
+             * Программа работает быстрее если файлов не существует и они создаются заново
+             *
+             * Так же попробывал накапливать builder и вызывать его только про прохождении 2, 3, 4 циклов regionCode
+             * но в скорости не выйграл и очень много памяти начинает кушать
+             * на двух ядерном pc получаются при 10 регионах
+             * 7608 ms pool-1-thread-1
+             * 7620 ms pool-1-thread-2
+             * Быстрее не получается
+             * */
+
         }
         executor.shutdown();
     }
@@ -96,3 +101,4 @@ public class Loader
         }
     }
 }
+
