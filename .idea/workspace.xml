@@ -53,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571378817833" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Pattern/pattern-Duck" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../14.12-homework" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -254,30 +254,30 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="298" y="0" width="761" height="727" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1579464966478" />
-    <state x="620" y="285" width="428" height="474" key="FileChooserDialogImpl" timestamp="1579519568249">
+    <state x="620" y="285" width="428" height="474" key="FileChooserDialogImpl" timestamp="1579601874551">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
-    <state x="620" y="285" width="428" height="474" key="FileChooserDialogImpl/0.0.1680.1012@0.0.1680.1012" timestamp="1579519568249" />
-    <state width="1624" height="265" key="GridCell.Tab.0.bottom" timestamp="1579600087745">
+    <state x="620" y="285" width="428" height="474" key="FileChooserDialogImpl/0.0.1680.1012@0.0.1680.1012" timestamp="1579601874551" />
+    <state width="1624" height="265" key="GridCell.Tab.0.bottom" timestamp="1579600259073">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1624" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1012@0.0.1680.1012" timestamp="1579600087745" />
-    <state width="1624" height="265" key="GridCell.Tab.0.center" timestamp="1579600087744">
+    <state width="1624" height="265" key="GridCell.Tab.0.bottom/0.0.1680.1012@0.0.1680.1012" timestamp="1579600259073" />
+    <state width="1624" height="265" key="GridCell.Tab.0.center" timestamp="1579600259072">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1624" height="265" key="GridCell.Tab.0.center/0.0.1680.1012@0.0.1680.1012" timestamp="1579600087744" />
-    <state width="1624" height="265" key="GridCell.Tab.0.left" timestamp="1579600087744">
+    <state width="1624" height="265" key="GridCell.Tab.0.center/0.0.1680.1012@0.0.1680.1012" timestamp="1579600259072" />
+    <state width="1624" height="265" key="GridCell.Tab.0.left" timestamp="1579600259071">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1624" height="265" key="GridCell.Tab.0.left/0.0.1680.1012@0.0.1680.1012" timestamp="1579600087744" />
-    <state width="1624" height="265" key="GridCell.Tab.0.right" timestamp="1579600087744">
+    <state width="1624" height="265" key="GridCell.Tab.0.left/0.0.1680.1012@0.0.1680.1012" timestamp="1579600259071" />
+    <state width="1624" height="265" key="GridCell.Tab.0.right" timestamp="1579600259072">
       <screen x="0" y="0" width="1680" height="1012" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1579466507792" />
-    <state width="1624" height="265" key="GridCell.Tab.0.right/0.0.1680.1012@0.0.1680.1012" timestamp="1579600087744" />
+    <state width="1624" height="265" key="GridCell.Tab.0.right/0.0.1680.1012@0.0.1680.1012" timestamp="1579600259072" />
     <state x="412" y="80" width="533" height="568" key="RollbackChangesDialog" timestamp="1579376961168">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
